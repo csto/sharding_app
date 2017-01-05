@@ -1,0 +1,12 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 3
+
+development:
+  shard1:
+    <<: *default
+    database: app_development_shard1
+  shard2:
+    <<: *default
+    database: app_development_shard2

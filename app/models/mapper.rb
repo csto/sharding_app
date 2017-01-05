@@ -1,0 +1,2 @@
+class Mapper < ApplicationRecord
+end
